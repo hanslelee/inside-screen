@@ -117,6 +117,26 @@ html, body {
 
 .google_logo {
   margin-bottom: 35px;
+  position: relative;
+  width: 272px;
+  height: 92px;
+  overflow: hidden;
+}
+
+.google_logo-code {
+  position: absolute;
+  background-color: black;
+  color: white;
+  font-family:'Courier New', Courier, monospace;
+  font-weight: 600;
+  overflow: hidden;
+}
+
+.google_logo-image {
+  position: absolute;
+  background-color: white;
+  margin-bottom: 35px;
+  z-index: 2;
 }
 
 .search_bar {

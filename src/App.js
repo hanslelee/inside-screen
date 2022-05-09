@@ -8,9 +8,9 @@ function App() {
   const onClickLogo = () => {
     window.location.href = "/";
   }
-  const onMouseOverDown = () => {
 
-  }
+  const htmlCode = '<div className=\'top_bar-left\'><h6>Google 정보</h6><h6>스토어</h6</div<div className=\'top_bar-right\'><h6>Gmail</h6><h6>이미지</h6><h6><FontAwesomeIcon className = "fa faBars" icon={faBars} /></h6><button className=\'login_btn\'>로그인</button</div>'
+
   return (
     <div className="google_page">
       <div className='top_bar'>
@@ -27,12 +27,18 @@ function App() {
         </div>
 
       <div className='center_wrap'>
-        <motion.div 
-          whileHover={{
-            opacity: 0
-          }}>
-          <img src={logo} className="google_logo" alt="logo" onClick={onClickLogo}/>
-        </motion.div>
+        <div className='google_logo'>
+        
+          <div className='google_logo-code' >
+            {/* {ReactHtmlParser('<button >Google 검색</button>')} */}
+            {htmlCode}
+          </div>
+          <motion.img 
+            whileHover={{
+              opacity: 0
+            }}
+            src={logo} className="google_logo-image" alt="logo" onClick={onClickLogo}/>
+        </div>
         <div className='search_bar'>
           <FontAwesomeIcon className = "fa faMagnifyingGlass" icon={faMagnifyingGlass} />
           <input className='search_textfield'></input>
