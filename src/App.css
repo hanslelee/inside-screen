@@ -120,28 +120,39 @@ html, body {
   position: relative;
   width: 272px;
   height: 92px;
-  overflow: hidden;
 }
 
-.google_logo-code {
+.code {
   position: absolute;
   background-color: black;
   color: white;
   font-family:'Courier New', Courier, monospace;
   font-weight: 600;
   overflow: hidden;
+  font-size: 11px;
+  word-break: break-all;
 }
 
 .google_logo-image {
   position: absolute;
   background-color: white;
   margin-bottom: 35px;
-  z-index: 2;
+}
+.search_bar {
+  height: 50px;
+  width: 656px;
+  margin-bottom: 35px;
 }
 
-.search_bar {
-  height: 44px;
-  width: 580px;
+.search_bar-outside--wrap {
+  background-color: white;
+  height: 50px;
+  width: 656px;
+}
+
+.search_bar-outside {
+  height: 47px;
+  width: 618px;
   display: flex;
   padding-left: 20px;
   padding-right: 15px;
@@ -149,7 +160,20 @@ html, body {
   align-items: center;
   border-radius: 22px;
   border:rgb(228, 228, 228) solid;
-  margin-bottom: 35px;
+  background-color: white;
+}
+
+.pos_rel {
+  position: relative;
+}
+.pos_abs {
+  position: absolute;
+}
+.z1 {
+  z-index: 1;
+}
+.overflow_hid {
+  overflow: hidden;
 }
 
 .search_bar input {
