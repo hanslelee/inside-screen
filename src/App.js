@@ -1,11 +1,15 @@
 import logo from './google_logo.svg';
 import { faMagnifyingGlass, faKeyboard, faMicrophone, faBars } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { motion } from 'framer-motion';
 import './App.css';
 
 function App() {
   const onClickLogo = () => {
     window.location.href = "/";
+  }
+  const onMouseOverDown = () => {
+
   }
   return (
     <div className="google_page">
@@ -23,8 +27,12 @@ function App() {
         </div>
 
       <div className='center_wrap'>
-        <img src={logo} className="google_logo" alt="logo" onClick={onClickLogo}/>
-        
+        <motion.div 
+          whileHover={{
+            opacity: 0
+          }}>
+          <img src={logo} className="google_logo" alt="logo" onClick={onClickLogo}/>
+        </motion.div>
         <div className='search_bar'>
           <FontAwesomeIcon className = "fa faMagnifyingGlass" icon={faMagnifyingGlass} />
           <input className='search_textfield'></input>
