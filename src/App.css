@@ -87,6 +87,28 @@ html, body {
   align-items: center;
 }
 
+.top_bar-left-google_info {
+  margin-right: 20px;
+  width: 80px;
+  height: 20px;
+}
+
+.top_bar-left-google_info h6 {
+  width: 80px;
+  height: 20px;
+}
+
+.top_bar-left-store {
+  margin-right: 20px;
+  width: 50px;
+  height: 20px;
+}
+
+.top_bar-left-store h6 {
+  width: 50px;
+  height: 20px;
+}
+
 .top_bar-right {
   margin: 20px;
   display:flex;
@@ -94,8 +116,30 @@ html, body {
   align-items: center;
 }
 
+.top_bar-right-gmail {
+  margin-right: 20px;
+  width: 50px;
+  height: 20px;
+}
+.top_bar-right-image {
+  margin-right: 20px;
+  width: 50px;
+  height: 20px;
+}
+.top_bar-right-faBars {
+  margin-right: 20px;
+  width: 20px;
+  height: 20px;
+}
+.top_bar-right-login_btn {
+  margin-right: 20px;
+  width: 94px;
+  height: 34px;
+}
+
 .top_bar h6 {
   margin-right: 20px;
+  background-color: white;
 }
 
 .login_btn {
@@ -163,23 +207,10 @@ html, body {
   background-color: white;
 }
 
-.pos_rel {
-  position: relative;
-}
-.pos_abs {
-  position: absolute;
-}
-.z1 {
-  z-index: 1;
-}
-.overflow_hid {
-  overflow: hidden;
-}
-
 .search_bar input {
   width: 100px;
   height: 20px;
-    
+  background-color: white;
   outline:none;
   border: none;
 }
@@ -253,6 +284,34 @@ html, body {
   color: #70757a;
 }
 
+.pos_rel {
+  position: relative;
+}
+.pos_abs {
+  position: absolute;
+}
+.z1 {
+  z-index: 1;
+}
+.overflow_hid {
+  overflow: hidden;
+}
+
+.backWhite {
+  background-color: white;
+}
+
+.wh100 {
+  width: 100%;
+  height: 100%;
+}
+
+.outside {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+}
 /* .App {
   text-align: center;
 }

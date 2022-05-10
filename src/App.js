@@ -15,14 +15,34 @@ function App() {
     <div className="google_page">
       <div className='top_bar'>
           <div className='top_bar-left'>
-            <h6>Google 정보</h6>
-            <h6>스토어</h6>
+            <div className='top_bar-left-google_info pos_rel overflow_hid'>
+              <div className='code pos_abs'>{htmlCode}</div>
+              <motion.h6 className='pos_abs z1 backWhite' whileHover={{opacity: 0}}>Google 정보</motion.h6>
+            </div>
+            <div className='top_bar-left-store pos_rel overflow_hid'>
+              <div className='code pos_abs'>{htmlCode}</div>
+              <motion.h6 className='pos_abs z1 backWhite' whileHover={{opacity: 0}}> 스토어</motion.h6>
+            </div>
           </div>
           <div className='top_bar-right'>
-            <h6>Gmail</h6>
-            <h6>이미지</h6>
-            <h6><FontAwesomeIcon className = "fa faBars" icon={faBars} /></h6>
-            <button className='login_btn'>로그인</button>
+            <div className='top_bar-right-gmail pos_rel overflow_hid'>
+              <div className='code pos_abs'>{htmlCode}</div>
+              <motion.h6 className='outside backwhite' whileHover={{opacity: 0}}>Gmail</motion.h6>
+            </div>
+            <div className='top_bar-right-image pos_rel overflow_hid'>
+              <div className='code pos_abs'>{htmlCode}</div>
+              <motion.h6 className='outside backWhite' whileHover={{opacity: 0}}>이미지</motion.h6>
+            </div>
+            <div className='top_bar-right-faBars pos_rel overflow_hid'>
+              <div className='code pos_abs'>{htmlCode}</div>
+              <motion.h6 className='outside backWhite' whileHover={{opacity: 0}}><FontAwesomeIcon className = "fa faBars" icon={faBars} /></motion.h6>
+            </div>
+            <div className='top_bar-right-login_btn pos_rel overflow_hid'>
+              <div className='code pos_abs'>{htmlCode}</div>
+              <motion.div whileHover={{opacity: 0}} className='outside backWhite'>
+                <motion.button className='login_btn outside' whileHover={{opacity: 0}}>로그인</motion.button>
+              </motion.div>
+            </div>
           </div>
         </div>
 
@@ -37,7 +57,7 @@ function App() {
           <motion.div whileHover={{opacity: 0}} className='search_bar-outside--wrap pos_abs z1'>
             <motion.div whileHover={{opacity: 0}} className='search_bar-outside pos_abs z1'>
               <FontAwesomeIcon className = "fa faMagnifyingGlass" icon={faMagnifyingGlass} />
-              <input className='search_textfield'></input>
+              <input disabled className='search_textfield'></input>
               <div className='search_right_buttons'>
                 <FontAwesomeIcon className = "fa faKeyboard" icon={faKeyboard} />
                 <FontAwesomeIcon className = "fa faMicrophone" icon={faMicrophone} />
