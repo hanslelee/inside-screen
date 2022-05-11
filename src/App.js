@@ -66,30 +66,33 @@ function App() {
           </motion.div>
         </div>
         <div className='search_buttons'>
-          <button className="googleSearchBtn">Google 검색</button>
-          <button className="feelingLuckyBtn">I'm Feeling Lucky</button>            
+          <div className='search_buttons-googleSearchBtn pos_rel overflow_hid'> 
+            <div className='code pos_abs'>{htmlCode}</div>
+            <motion.div whileHover={{opacity: 0}} className='outside backWhite'>
+              <motion.button whileHover={{opacity: 0}} className="googleSearchBtn outside">Google 검색</motion.button>
+            </motion.div>
+          </div>
+          <div className='search_buttons-feelingLuckyBtn pos_rel overflow_hid'>
+            <div className='code pos_abs'>{htmlCode}</div>
+            <motion.div whileHover={{opacity: 0}} className='outside backWhite'>
+              <motion.button whileHover={{opacity: 0}} className="feelingLuckyBtn outside">I'm Feeling Lucky</motion.button>            
+            </motion.div>
+          </div>
+          
+          
         </div>
-        {/* <div className='search_services'>
-          <h6>Google 제공 서비스: </h6>
-          <h6 style={{color: `blue`}}>English</h6>
-        </div> */}
       </div>
       <div className='bottom_bar'>
-        <div className='bottom_bar-upper'>
-          <h6>대한민국</h6>
+        <div className='bottom_bar-upper-wrap pos_rel overflow_hid'>
+          <div className='code pos_abs'>{htmlCode}</div>
+          <motion.div whileHover={{opacity: 0}} className='bottom_bar-upper outside'><h6>대한민국</h6></motion.div>
         </div>
-        <div className='bottom_bar-lower'>
-          <div className='bottom_bar-lower-left'>
-            <h6>광고</h6>
-            <h6>비즈니스</h6>
-            <h6>검색의 원리</h6>
-          </div>
-          <div className='bottom_bar-lower-right'>
-            <h6>개인정보처리방침</h6>
-            <h6>약관</h6>
-            <h6>설정</h6>
-            </div>
+        <div className='bottom_bar-lower-wrap pos_rel overflow_hid'>
+          <div className='code pos_abs'>{htmlCode}</div>
+          <motion.div whileHover={{opacity: 0}} className='bottom_bar-lower outside'><div className='bottom_bar-lower-left'><h6>광고</h6><h6>비즈니스</h6><h6>검색의 원리</h6></div><div className='bottom_bar-lower-right'><h6>개인정보처리방침</h6><h6>약관</h6><h6>설정</h6></div></motion.div> 
         </div>
+        
+
       </div>
     </div>
   );
