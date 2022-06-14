@@ -22,7 +22,8 @@ time, mark, audio, video {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Arial, Helvetica, sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* font-family:Arial, Helvetica, sans-serif; */
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -96,6 +97,7 @@ html, body {
 .top_bar-left-google_info h6 {
   width: 87px;
   height: 20px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .top_bar-left-store {
@@ -107,6 +109,7 @@ html, body {
 .top_bar-left-store h6 {
   width: 50px;
   height: 20px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .top_bar-right {
@@ -140,6 +143,7 @@ html, body {
 .top_bar h6 {
   margin-right: 20px;
   background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .login_btn {
@@ -307,6 +311,7 @@ html, body {
 .bottom_bar h6 {
   margin-right: 20px;
   color: #70757a;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .pos_rel {
